@@ -1,4 +1,4 @@
-const API_KEY = "AIzaSyDccNbkbM13YTrbJS8ClU7PjHM2fqCpwvA";
+const API_KEY = "Your Api-Key";
 const URL =`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
 // ....................................................chatbot logic
 
