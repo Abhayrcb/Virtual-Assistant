@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+body{
+  background-color: black;
+}
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* overflow: hidden; */
+  
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+   
+ }
+ #shipra{
+     height: 65%;
+ }
+ span{
+   background: linear-gradient(to right,rgb(33, 112, 149),rgb(165, 29, 115));
+   font-size:2vmax;
+   background-clip: text;
+   color: transparent;
+   font-weight: 800;
+ }
+ #btn{
+     padding: 10px;
+     width: 180px;
+     height: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     font-size: 19px;
+     font-weight: 800;
+     border-radius: 40px 40px 40px 40px;
+     background-color: rgb(43, 139, 139);
+     color: black;
+     outline: none;
+     border: none;
+ }
+
+.gif-background{
+    width: 600px;
+    height: 70px;
+    background-image: url('resorces/aiVoice.gif');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 50px;
+    filter: opacity(0.8);
+    background-color: transparent;
+    display: none;
+}
+
+.speak-gif{
+    width: 140px;
+    height: 140px;
+    background-image: url('resorces/speak.gif');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    filter: opacity(0.8);
+    background-color: transparent;
+    display: none;
+}
+
+.chat-bot{
+  width: 700px;
+  height: 600px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.278);
+  margin: auto;
+  display: none;
+  padding: 10px;
+}
+
+.display-box{
+   width: 100%;
+   height: 85%;
+   overflow-y: auto;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+.button-box{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 10%;
+  padding-top: 10px;
+
+}
+#request{
+  width: 80%;
+  height: 50px;
+  border-radius: 60px;
+  border: none;
+  padding-left: 10px;
+  outline: none;
+}
+#chatsend{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+}
+/* 
+.display-box{
+  width: 100%;
+  height: 75vh;
+  background-color:rgb(209, 212, 214);
+  border-radius: 5px;
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+  box-shadow: 5px 5px 10px 5px white;
+} */
+.left-message{
+  width: 60%;
+  height: fit-content;
+  background-color: #fff;
+  padding: 5px;
+  color: #000000;
+  border-radius: 0 10px 10px 10px;
+  font-size: 18px;
+}
+
+.right-message{
+  width: 60%;
+  height: fit-content;
+  background-color: #89c7d7;
+  padding: 5px;
+  color: #000000;
+  position: relative;
+  left: 40%;
+  border-radius: 10px 0 10px 10px ;
+  font-size: 18px;
+}
+
+pre{
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 10px;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
